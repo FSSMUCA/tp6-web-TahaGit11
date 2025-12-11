@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Application Web Avancée</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Mini-Application Web — Calculatrice</h1>
+    </header>
+
+    <main>
+
+        <!-- Zone d'erreurs -->
+        <div id="error"></div>
+
+        <!-- Formulaire -->
+        <form id="calcForm">
+
+            <label for="a">Nombre A :</label>
+            <input type="number" id="a" name="a">
+
+            <label for="b">Nombre B :</label>
+            <input type="number" id="b" name="b">
+
+            <label for="operation">Opération :</label>
+            <select id="operation">
+                <option value="+">Addition (+)</option>
+                <option value="-">Soustraction (-)</option>
+                <option value="*">Multiplication (×)</option>
+                <option value="/">Division (÷)</option>
+            </select>
+
+            <button type="submit">Calculer</button>
+        </form>
+         
+       <!-- Zone du résultat -->
+        <div id="resultBox">
+         <h2>Résultat :</h2>
+         <p id="resultValue">—</p>
+        </div>
+
+       <!-- Historique -->
+        <section id="history">
+            <h2>Historique des opérations</h2>
+            <ul id="historyList"></ul>
+        </section>
+
+        <p>
+            <a href="info.php">Page PHP (variables & calculs)</a>
+        </p>
+
+    </main>
+
+    <footer>
+        <p>© 2025 devTaha</p>
+    </footer>
+
+    <!-- IMPORTANT : Ici on charge script.js et non app.js -->
+    <script src="app.js"></script>
+
+</body>
+</html>
+
+
